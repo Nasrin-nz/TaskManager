@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>ایجاد ارجاع</title>
+</head>
+<body>
+    <h1>ایجاد ارجاع جدید</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ثبت ارجاع</button>
+    </form>
+</body>
+</html>
